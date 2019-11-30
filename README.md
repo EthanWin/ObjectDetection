@@ -29,7 +29,9 @@ pip install opencv-python easydict pyyaml future pillow
 
 2. conda create -n new_environment python=3.5
  conda activate new_environment
+ 
  deactivate
+ 
  activate new_environment
 
 3. 
