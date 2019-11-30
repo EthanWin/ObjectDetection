@@ -27,37 +27,41 @@ pip install opencv-python easydict pyyaml future pillow
 
 1.git clone https://github.com/bhrnjica/ObjectDetection
 
-2. conda create -n new_environment python=3.5
- conda activate new_environment
+2. c:\~\conda create -n new_environment python=3.5
  
- deactivate
+ c:\~\conda activate new_environment
  
- activate new_environment
+ c:\~\deactivate
+ 
+ c:\~\activate new_environment
 
 3. 
 *install matplotlib
- pip install matplotlib
+ 
+ c:\~\pip install matplotlib
 
-python -m pip install --upgrade pip
+ c:\~\python -m pip install --upgrade pip
 
 *install CNTK
- pip install cntk
- pip install easydict
- pip install pyyaml
- pip install opencv-python
- pip install pillow
+ 
+ c:\~\pip install cntk
+ 
+ c:\~\pip install easydict
+ c:\~\pip install pyyaml
+ c:\~\pip install opencv-python
+ c:\~\pip install pillow
 
 4.
 switch path:
  cd  C:\Users\”username”\Documents\GitHub\ObjectDetection\PretrainedModels
  cd  C:\Users\ethan.wu\Documents\GitHub\ObjectDetection\PretrainedModels
- python  download_model.py 
+ c:\~\python  download_model.py 
 
 5.
 switch path:
  cd ..
  To train and evaluate a detector run
- python Nokia3310_detection.py
+ c:\~\python Nokia3310_detection.py
  
  fix hardcode
 # detect objects in single image
