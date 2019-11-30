@@ -34,8 +34,10 @@ activate new_environment
 
 3. 
 *install matplotlib
-pip install matplotlib 
+pip install matplotlib
+
 python -m pip install --upgrade pip
+
 *install CNTK
 pip install cntk
 pip install easydict
@@ -46,7 +48,7 @@ pip install pillow
 4.
 switch path:
 cd  C:\Users\”username”\Documents\GitHub\ObjectDetection\PretrainedModels
-cd  C:\Users\ ethan.wu\Documents\GitHub\ObjectDetection\PretrainedModels
+cd  C:\Users\ethan.wu\Documents\GitHub\ObjectDetection\PretrainedModels
 python  download_model.py 
 
 5.
