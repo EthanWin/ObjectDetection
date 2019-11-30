@@ -25,9 +25,36 @@ Beside the basics requiremens you need to install the following additional packa
 pip install opencv-python easydict pyyaml future pillow
 ```
 
-Also, code uses prebuild Cython modules for parts of the region proposal network (see `utils/cython_modules`). This will only work on Windows with Python 3.5 at the moment. You'll need to compile the cython module binaries for your specific platform (OS & Python version) to have this work on another environment. 
+1.git clone https://github.com/bhrnjica/ObjectDetection
+2. conda create -n new_environment python=3.5
+conda activate new_environment
+deactivate
+activate new_environment
+3. 
+*install matplotlib
+pip install matplotlib 
+python -m pip install --upgrade pip
+*install CNTK
+pip install cntk
+pip install easydict
+pip install pyyaml
+pip install opencv-python
+pip install pillow
 
-If you want to use the debug output you need to run `pip install pydot_ng` ([website](https://pypi.python.org/pypi/pydot-ng)) and install [graphviz](http://graphviz.org/) to be able to plot the CNTK graphs (the GraphViz executable has to be in the system’s PATH).
+4.
+switch path:
+cd  C:\Users\”username”\Documents\GitHub\ObjectDetection\PretrainedModels
+cd  C:\Users\ ethan.wu\Documents\GitHub\ObjectDetection\PretrainedModels
+python  download_model.py 
+5.
+switch path:
+cd ..
+To train and evaluate a detector run
+python Nokia3310_detection.py
+fix hardcode
+# detect objects in single image
+img_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), r"testImages/img30.jpg")
+
 
 ### Getting the data and AlexNet model
 
