@@ -54,13 +54,16 @@ pip install opencv-python easydict pyyaml future pillow
 4.
 switch path:
  cd  C:\Users\”username”\Documents\GitHub\ObjectDetection\PretrainedModels
+ 
  cd  C:\Users\ethan.wu\Documents\GitHub\ObjectDetection\PretrainedModels
+ 
  c:\~\python  download_model.py 
 
 5.
 switch path:
  cd ..
  To train and evaluate a detector run
+ 
  c:\~\python Nokia3310_detection.py
  
  fix hardcode
