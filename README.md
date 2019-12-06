@@ -21,31 +21,30 @@ To run Nokia3310 object detection example you need a CNTK 2.5, Python 3.5 enviro
 
 Beside the basics requiremens you need to install the following additional packages:
 
-```
-pip install opencv-python easydict pyyaml future pillow
-```
 
-1.git clone https://github.com/bhrnjica/ObjectDetection
-
-2. c:\~\conda create -n new_environment python=3.5
+1. c:\~\conda create -n new_environment python=3.5 pip
  
  c:\~\conda activate new_environment
  
- c:\~\deactivate
- 
- c:\~\activate new_environment
+2.python -m pip install --upgrade pip
 
-3. 
+3.conda install git
+ 
+4.git clone https://github.com/bhrnjica/ObjectDetection
+
+5. 
 *install matplotlib
  
  c:\~\pip install matplotlib
 
- c:\~\python -m pip install --upgrade pip
 
 *install CNTK
  
  c:\~\pip install cntk
  
+```
+pip install opencv-python easydict pyyaml future pillow
+```
  c:\~\pip install easydict
  c:\~\pip install pyyaml
  c:\~\pip install opencv-python
@@ -53,9 +52,8 @@ pip install opencv-python easydict pyyaml future pillow
 
 4.
 switch path:
- cd  C:\Users\”username”\Documents\GitHub\ObjectDetection\PretrainedModels
+ cd  C:\Users\”username”\Documents\~\ObjectDetection\PretrainedModels
  
- cd  C:\Users\ethan.wu\Documents\GitHub\ObjectDetection\PretrainedModels
  
  c:\~\python  download_model.py 
 
