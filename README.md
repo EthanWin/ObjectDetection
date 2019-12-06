@@ -64,10 +64,16 @@ switch path:
  
  c:\~\python Nokia3310_detection.py
  
- fix hardcode
+ fix hardcode for type error
+ img_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), r"testImages/img30.jpg")
+
 # detect objects in single image
+
+Change img30 for detect
 img_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), r"testImages/img30.jpg")
 
+
+see the output folder ->PATH:C:\~\ObjectDetection\FasterRCNN\Output\NO3310
 
 ### Getting the data and AlexNet model
 
