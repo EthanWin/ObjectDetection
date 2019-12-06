@@ -55,18 +55,19 @@ c:\~\pip install opencv-python easydict pyyaml future pillow
 ```
 
 4.
- #switch path:
- cd  C:\Users\”username”\Documents\~\ObjectDetection\PretrainedModels
+ #switch path:username depend on what's account you login.
  
+ cd  C:\Users\”username”\~\ObjectDetection\PretrainedModels
  
  c:\~\python  download_model.py 
 
 5.
  #switch path:
- cd ..
  
- #fix hardcode for type error
- # edit Nokia3310_detection.py
+ C:\Users\”username”\~\ObjectDetection\PretrainedModels\cd ..
+ 
+ #fix hardcode for type error 
+ #edit Nokia3310_detection.py
  
  img_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), r"testImages/img30.jpg")
  
@@ -74,15 +75,18 @@ c:\~\pip install opencv-python easydict pyyaml future pillow
  
  c:\~\python Nokia3310_detection.py
  
-
 # detect objects in single image
 
-Change img30 for detect
+#Change img30 for detect
+#edit Nokia3310_detection.py
+
 img_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), r"testImages/img30.jpg")
 
+#see the output folder 
 
-see the output folder ->PATH:C:\~\ObjectDetection\FasterRCNN\Output\NO3310
+->PATH:C:\~\ObjectDetection\FasterRCNN\Output\NO3310
 
+###----------------------------------------------------------------------------------------------------------###
 ### Getting the data and AlexNet model
 
 The example uses the pre-trained AlexNet model which can be downloaded by running the following Python command from the PretrainedModels folder:
