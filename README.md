@@ -22,50 +22,58 @@ To run Nokia3310 object detection example you need a CNTK 2.5, Python 3.5 enviro
 Beside the basics requiremens you need to install the following additional packages:
 
 
-1. c:\~\conda create -n new_environment python=3.5 pip
- 
- c:\~\conda activate new_environment
- 
-2.python -m pip install --upgrade pip
+1. 
 
-3.conda install git
+c:\~\conda create -n new_environment python=3.5 pip
  
-4.git clone https://github.com/bhrnjica/ObjectDetection
+c:\~\conda activate new_environment
+ 
+2.
+
+c:\~\python -m pip install --upgrade pip
+
+3.
+
+c:\~\conda install git
+ 
+4.
+
+c:\~\git clone https://github.com/bhrnjica/ObjectDetection
 
 5. 
-*install matplotlib
+#install matplotlib
  
  c:\~\pip install matplotlib
 
 
-*install CNTK
+#install CNTK
  
- c:\~\pip install cntk
+c:\~\pip install cntk
  
 ```
-pip install opencv-python easydict pyyaml future pillow
+c:\~\pip install opencv-python easydict pyyaml future pillow
 ```
- c:\~\pip install easydict
- c:\~\pip install pyyaml
- c:\~\pip install opencv-python
- c:\~\pip install pillow
 
 4.
-switch path:
+ #switch path:
  cd  C:\Users\”username”\Documents\~\ObjectDetection\PretrainedModels
  
  
  c:\~\python  download_model.py 
 
 5.
-switch path:
+ #switch path:
  cd ..
- To train and evaluate a detector run
+ 
+ #fix hardcode for type error
+ # edit Nokia3310_detection.py
+ 
+ img_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), r"testImages/img30.jpg")
+ 
+ #To train and evaluate a detector run
  
  c:\~\python Nokia3310_detection.py
  
- fix hardcode for type error
- img_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), r"testImages/img30.jpg")
 
 # detect objects in single image
 
@@ -95,3 +103,9 @@ In order to change DataSet you have to provide the images and data. More informa
 #### Changing the base model
 
 Changing base model is not supported. 
+
+addition package 
+ c:\~\pip install easydict
+ c:\~\pip install pyyaml
+ c:\~\pip install opencv-python
+ c:\~\pip install pillow
